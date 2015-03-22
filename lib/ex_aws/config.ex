@@ -14,6 +14,8 @@ defmodule ExAws.Config do
       |> aws_config(ddb_scheme: conf[:ddb_scheme])
       |> aws_config(ddb_host: conf[:ddb_host])
       |> aws_config(ddb_port: conf[:ddb_port])
+      |> aws_config(access_key_id: conf[:access_key_id])
+      |> aws_config(secret_access_key: conf[:secret_access_key])
   end
 
 
